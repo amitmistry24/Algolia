@@ -31,7 +31,7 @@ search.addWidget(
 search.addWidget(
   instantsearch.widgets.refinementList({
     container: '#brand-list',
-    attribute: 'price',
+    attribute: 'brand',
   })
 );
 
