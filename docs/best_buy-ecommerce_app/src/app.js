@@ -17,15 +17,21 @@ search.addWidget(
 );
 
 search.addWidget(
-  instantsearch.widgets.refinementList({
-    container: '#brand-list',
-    attribute: 'brand',
+  instantsearch.widgets.searchBox({
+    container: '#searchbox',
   })
 );
 
 search.addWidget(
-  instantsearch.widgets.searchBox({
-    container: '#searchbox',
+  instantsearch.widgets.currentRefinements({
+    container: '#current-refinements',
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.refinementList({
+    container: '#brand-list',
+    attribute: 'price',
   })
 );
 
