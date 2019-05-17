@@ -11,6 +11,21 @@ const search = instantsearch({
 });
 
 search.addWidget(
+  instantsearch.widgets.clearRefinements({
+    container: '#clear-refinements',
+  })
+);
+
+// After the `searchBox` widget
+
+search.addWidget(
+  instantsearch.widgets.refinementList({
+    container: '#brand-list',
+    attribute: 'brand',
+  })
+);
+
+search.addWidget(
   instantsearch.widgets.searchBox({
     container: '#searchbox',
   })
