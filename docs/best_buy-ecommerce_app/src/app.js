@@ -16,8 +16,6 @@ search.addWidget(
   })
 );
 
-// After the `searchBox` widget
-
 search.addWidget(
   instantsearch.widgets.refinementList({
     container: '#brand-list',
