@@ -17,12 +17,6 @@ search.addWidget(
 );
 
 search.addWidget(
-  instantsearch.widgets.searchBox({
-    container: '#searchbox',
-  })
-);
-
-search.addWidget(
   instantsearch.widgets.currentRefinements({
     container: '#current-refinements',
   })
@@ -32,6 +26,13 @@ search.addWidget(
   instantsearch.widgets.refinementList({
     container: '#brand-list',
     attribute: 'brand',
+    attribute: 'manufacturer',
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#searchbox',
   })
 );
 
